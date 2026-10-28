@@ -797,11 +797,10 @@ function GeographyGame({ onComplete, onReturnLobby }) {
       </div>
       <p className="text-xs text-zinc-400 mb-4">Search countries to get distance and compass bearing feedback.</p>
 
-      {/* FULL DETAILED SVG WORLD MAP */}
+      {/* VISIBLE SVG WORLD MAP */}
       <div className="relative w-full h-56 bg-[#061017] border border-teal-500/30 rounded-2xl mb-6 overflow-hidden shadow-inner flex items-center justify-center p-2">
-        <svg viewBox="0 0 1000 500" className="w-full h-full text-teal-900/70 fill-current">
-          {/* Latitude and Longitude Grid */}
-          <g stroke="#0f2938" strokeWidth="1" strokeDasharray="4 4">
+        <svg viewBox="0 0 1000 500" className="w-full h-full fill-[#0d3b48] stroke-[#14b8a6]" strokeWidth="1.5">
+          <g stroke="#0f2938" strokeWidth="1" strokeDasharray="4 4" fill="none">
             <line x1="0" y1="83" x2="1000" y2="83" />
             <line x1="0" y1="166" x2="1000" y2="166" />
             <line x1="0" y1="250" x2="1000" y2="250" strokeWidth="1.5" stroke="#164e63" />
@@ -815,24 +814,13 @@ function GeographyGame({ onComplete, onReturnLobby }) {
             <line x1="833" y1="0" x2="833" y2="500" />
           </g>
 
-          {/* Detailed Continent Vector Paths */}
-          {/* North America */}
-          <path d="M 50,40 L 120,30 L 220,25 L 290,40 L 320,80 L 280,120 L 260,180 L 230,220 L 200,210 L 180,240 L 160,200 L 140,160 L 100,160 L 70,120 L 40,80 Z M 220,120 L 250,140 L 230,160 Z" />
-          {/* Greenland */}
+          <path d="M 50,40 L 120,30 L 220,25 L 290,40 L 320,80 L 280,120 L 260,180 L 230,220 L 200,210 L 180,240 L 160,200 L 140,160 L 100,160 L 70,120 L 40,80 Z" />
           <path d="M 330,20 L 410,15 L 430,40 L 390,75 L 340,60 Z" />
-          {/* South America */}
           <path d="M 230,230 L 290,220 L 340,260 L 330,330 L 280,420 L 250,440 L 240,380 L 220,300 L 210,250 Z" />
-          {/* Europe */}
-          <path d="M 450,80 L 510,60 L 580,70 L 600,110 L 560,140 L 520,150 L 480,140 L 460,110 Z M 440,90 L 460,70 L 450,110 Z" />
-          {/* Africa */}
-          <path d="M 450,150 L 550,145 L 610,180 L 610,240 L 570,330 L 530,380 L 490,360 L 460,280 L 430,200 Z M 615,280 L 635,290 L 625,330 L 610,310 Z" />
-          {/* Asia */}
+          <path d="M 450,80 L 510,60 L 580,70 L 600,110 L 560,140 L 520,150 L 480,140 L 460,110 Z" />
+          <path d="M 450,150 L 550,145 L 610,180 L 610,240 L 570,330 L 530,380 L 490,360 L 460,280 L 430,200 Z" />
           <path d="M 600,60 L 750,40 L 880,50 L 930,100 L 910,160 L 850,200 L 780,240 L 730,230 L 680,200 L 650,180 L 600,120 Z" />
-          {/* Southeast Asia Islands */}
-          <path d="M 780,250 L 810,250 L 800,270 Z M 820,260 L 860,260 L 850,280 Z M 870,250 L 910,250 L 900,270 Z" />
-          {/* Australia */}
           <path d="M 780,310 L 870,300 L 890,360 L 850,410 L 770,390 L 760,340 Z" />
-          {/* Antarctica */}
           <path d="M 100,470 L 900,470 L 950,490 L 50,490 Z" />
         </svg>
 
@@ -894,3 +882,4 @@ function GeographyGame({ onComplete, onReturnLobby }) {
     </div>
   );
 }
+
